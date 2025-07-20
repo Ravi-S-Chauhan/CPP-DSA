@@ -7,7 +7,9 @@ void tc(){
     cin>>n;
     cin.ignore();
     getline(cin,s);
-    
+    int i=0;
+    while(i<n/2 && s[i] != s[n-i-1]) i++;
+    cout<<n-2*i<<"\n";
 }
 
 int main(){
